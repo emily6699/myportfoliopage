@@ -32,17 +32,29 @@ $(document).ready(function() {
     }
   });
 
-  $(".chart").easyPieChart({
-    easing: "easeInOut",
-    barColor: "#fff",
-    trackColor: false,
-    scaleColor: false,
-    lineWidth: 4,
-    size: 152,
-    onStep: function(from, to, percent) {
-      $(this.el)
-        .find(".percent")
-        .text(Math.round(percent));
+  // how to make the pie chart animated only when scrolling down
+  var skillsTopOffset = $(".skillsSection").offset().top;
+  //the function gets called everytime where the window scrolls to
+  $(window).scroll(function() {
+    //window.pageYOffset is how far where scroll position to from the Top
+    console.log("window.pageYOffset", window.pageYOffset);
+    console.log("skillsTopOffset", skillsTopOffset);
+    console.log("window.height", $(window).height());
+
+    if (window.pageYOffset > skillsTopOffset - $(window).height() + 300) {
+      $(".chart").easyPieChart({
+        easing: "easeInOut",
+        barColor: "#fff",
+        trackColor: false,
+        scaleColor: false,
+        lineWidth: 4,
+        size: 152,
+        onStep: function(from, to, percent) {
+          $(this.el)
+            .find(".percent")
+            .text(Math.round(percent));
+        }
+      });
     }
   });
 });
