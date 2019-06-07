@@ -7,9 +7,9 @@ $(document).ready(function() {
 
   var typed = new Typed(".typed", {
     strings: ["Software Engineer.", "Web Developer."],
-    typeSpeed: 70,
+    typeSpeed: 100,
     loop: true,
-    strtDelay: 1000,
+    startDelay: 1000,
     showCursor: false
   });
 });
