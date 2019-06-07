@@ -37,9 +37,9 @@ $(document).ready(function() {
   //the function gets called everytime where the window scrolls to
   $(window).scroll(function() {
     //window.pageYOffset is how far where scroll position to from the Top
-    console.log("window.pageYOffset", window.pageYOffset);
-    console.log("skillsTopOffset", skillsTopOffset);
-    console.log("window.height", $(window).height());
+    // console.log("window.pageYOffset", window.pageYOffset);
+    // console.log("skillsTopOffset", skillsTopOffset);
+    // console.log("window.height", $(window).height());
 
     if (window.pageYOffset > skillsTopOffset - $(window).height() + 300) {
       $(".chart").easyPieChart({
