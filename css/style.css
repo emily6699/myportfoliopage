@@ -195,3 +195,44 @@ body {
   padding-bottom: 40px;
   width: 100%;
 }
+.items li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.itemsContainer {
+  width: 100%;
+}
+.cropimg {
+  width: 100%;
+}
+
+.items .item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.items .icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px auto 0 -47px;
+  width: 90px;
+  height: 40px;
+  text-align: center;
+  z-index: 3;
+}
+
+/* .items .icons .iconsearch,
+.items .icons .iconlin {
+  color: #fff;
+} */
+
+.items a {
+  width: 28px;
+  height: 26px;
+  background-color: #c7ecee;
+  position: relative;
+  display: inline-block;
+}
