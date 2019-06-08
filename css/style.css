@@ -235,6 +235,11 @@ body {
   background-color: #c7ecee;
   position: relative;
   display: inline-block;
+
+  -webkit-transition: all 0.2s linear, 0.3s;
+  -moz-transition: all 0.2s linear, 0.3s;
+  -ms-transition: all 0.2s linear, 0.3s;
+  transition: all 0.2s linear, 0.3s;
 }
 
 .items .imageOverlay {
@@ -255,4 +260,21 @@ body {
 
 .items .item:hover .imageOverlay {
   opacity: 0.8;
+}
+
+.items .openButton {
+  float: left;
+  left: -200px;
+}
+
+.items .projectlink {
+  float: right;
+  right: -200px;
+}
+
+.items .item:hover .openButton {
+  left: 0px;
+}
+.items .item:hover .projectlink {
+  right: 0px;
 }
