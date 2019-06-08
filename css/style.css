@@ -70,6 +70,11 @@ body {
   background-color: #63cdda;
   color: #fff;
 }
+
+.contactSection {
+  background-color: #fff;
+  color: #63cdda;
+}
 .skill {
   text-align: center;
   margin-left: 10px;
@@ -136,4 +141,31 @@ body {
   font-size: 13px;
   font-weight: 680;
   margin: 0;
+}
+
+.squareIcon {
+  position: absolute;
+  left: 50%;
+  top: -30px;
+  width: 40%;
+  height: 60px;
+  font-size: 45px;
+  margin-left: -20%;
+}
+.contactButton {
+  color: #444;
+  padding: 15px 20px;
+  display: inline-block;
+  margin-top: 20px;
+  border: 1px solid #444;
+  border-radius: 2px;
+}
+
+.contactButton:hover {
+  text-decoration: none;
+  color: #636e72;
+  background-color: #c7ecee;
+}
+.subHeading {
+  font-size: 20px;
 }
