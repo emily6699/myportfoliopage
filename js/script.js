@@ -6,7 +6,7 @@ $(document).ready(function() {
   });
 
   var typed = new Typed(".typed", {
-    strings: ["Software Engineer.", "Web Developer."],
+    strings: ["Software Engineer.", "Web Developer.", "Full Stack."],
     typeSpeed: 100,
     loop: true,
     startDelay: 1000,
@@ -56,6 +56,20 @@ $(document).ready(function() {
         }
       });
     }
+
+    if (
+      !countUpFinished &&
+      window.pageYOffset > statsTopOffset - $(window).height() + 200
+    ) {
+      $(".counter").each(function() {
+        var element = $(this);
+        var endVal = parseInt(element.text());
+
+        element.countup(endVal);
+      });
+
+      countUpFinished = true;
+    }
   });
 
   $("[data-fancybox").fancybox();
@@ -67,5 +81,21 @@ $(document).ready(function() {
       easing: "linear",
       queue: false
     }
+  });
+  // explain how does the isotope work for filtering
+  $("#filters a").click(function() {
+    $("#filters .current").removeClass("current");
+    $(this).addClass("current");
+
+    var selector = $(this).attr("data-filter");
+    $(".items").isotope({
+      filter: selector,
+      animationOptions: {
+        duration: 1500,
+        easing: "linear",
+        queue: false
+      }
+    });
+    return false;
   });
 });
