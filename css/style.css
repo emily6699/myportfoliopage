@@ -294,3 +294,13 @@ body {
 .items {
   padding: 2;
 }
+
+.copyrightSection {
+  background-color: #7ed6df;
+  color: #fff;
+  padding: 20px 5px;
+}
+
+.copyrightSection p {
+  margin: 0;
+}
