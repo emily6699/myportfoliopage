@@ -34,6 +34,8 @@ $(document).ready(function() {
 
   // how to make the pie chart animated only when scrolling down
   var skillsTopOffset = $(".skillsSection").offset().top;
+  // var statsTopOffset = $(".statsSection").offset().top;
+  // var countUpFinished = false;
   //the function gets called everytime where the window scrolls to
   $(window).scroll(function() {
     //window.pageYOffset is how far where scroll position to from the Top
@@ -98,4 +100,28 @@ $(document).ready(function() {
     });
     return false;
   });
+
+  $("#navigation li a").click(function(e) {
+    e.preventDefault();
+    var targetElement = $(this).attr("href");
+    var targetPosition = $(targetElement).offset().top;
+    $("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
+  });
+
+  const nav = $("#navigation");
+  const navTop = nav.offset().top;
+
+  $(window).on("scroll", stickyNavigation);
+
+  function stickyNavigation() {
+    var body = $("body");
+
+    if ($(window).scrollTop() >= navTop) {
+      body.css("padding-top", nav.outerHeight() + "px");
+      body.addClass("fixedNav");
+    } else {
+      body.css("padding-top", 0);
+      body.removeClass("fixedNav");
+    }
+  }
 });
