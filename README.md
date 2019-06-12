@@ -21,4 +21,5 @@
 #### Getting Colors: https://flatuicolors.com/
 #### Isotope(For filtering the projects): https://isotope.metafizzy.co/
 #### owl Carousel: https://owlcarousel2.github.io/OwlCarousel2/
+#### Free HD images: https://www.pexels.com/
 ![img](https://github.com/emily6699/myportfoliopage/blob/master/img/frontpage.png)
