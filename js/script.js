@@ -1,3 +1,9 @@
+$(window).on("load", function() {
+  $(".loader").fadeOut(700, function() {
+    $(".loader".fadeOut(1000));
+  });
+});
+
 $(document).ready(function() {
   $("#slides").superslides({
     animation: "fade",
