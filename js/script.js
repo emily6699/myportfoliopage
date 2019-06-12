@@ -1,6 +1,14 @@
 $(window).on("load", function() {
-  $(".loader").fadeOut(700, function() {
-    $(".loader".fadeOut(1000));
+  $(".loader").fadeOut(600, function() {
+    $(".loader".fadeOut(800));
+  });
+  $(".items").isotope({
+    filter: "*",
+    animationOptions: {
+      duration: 1500,
+      easing: "linear",
+      queue: false
+    }
   });
 });
 
@@ -82,14 +90,6 @@ $(document).ready(function() {
 
   $("[data-fancybox").fancybox();
 
-  $(".items").isotope({
-    filter: "*",
-    animationOptions: {
-      duration: 1500,
-      easing: "linear",
-      queue: false
-    }
-  });
   // explain how does the isotope work for filtering
   $("#filters a").click(function() {
     $("#filters .current").removeClass("current");
