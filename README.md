@@ -13,7 +13,7 @@
  
 ## Libraries:
 #### Superslides.scss : https://github.com/emily6699/superslides
-#### Type.js : https://github.com/mattboldt/typed.js/
+#### Typed.js : https://github.com/mattboldt/typed.js/
 #### Easy-pie-chart: https://github.com/rendro/easy-pie-chart
 #### Icons8: https://icons8.com/
 #### FancyBox: https://github.com/fancyapps/fancybox
