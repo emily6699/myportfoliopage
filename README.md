@@ -4,7 +4,7 @@
 ### link:  https://emily6699.github.io/myportfoliopage/
 
 
-### Description: My portfolio page showing my background and all the projects that I've done.
+### Description: My portfolio page shows my background and all the projects that I've done.
 
 
 ## Technologies:
