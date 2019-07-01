@@ -167,6 +167,20 @@ body {
   background-color: #c7ecee;
   border: 1px solid #fff;
 }
+.linkedInIcon {
+  color: #7ed6df;
+  padding: 10px 10px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 2px;
+}
+
+.linkedInIcon:hover {
+  text-decoration: none;
+  color: #7ed6df;
+  background-color: #eaf4f5;
+  border: 1px solid #fff;
+}
 .subHeading {
   font-size: 20px;
 }
